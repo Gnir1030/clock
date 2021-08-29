@@ -4,8 +4,8 @@
     <title></title>
     <canvas id="myCanvas" width="400" height="400" style="border:1px black;"></canvas>
     <script type="text/javascript">
-    var image = new Image()
-    image.src = "kamen.jpg"
+    //var image = new Image()
+    //image.src = "kamen.jpg"
     var canvas = document.getElementById("myCanvas");
     /*Clock Border*/
     var context = canvas.getContext("2d");
@@ -44,24 +44,6 @@
         context.rotate(-ang);
    }
 }
-/*
-  function number(context){
-    var = ang
-    var = num
-    context.font = radius*0.15 + "px 고딕"
-    context.textBaseline = "middle"
-    context.textAlign = "center"
-    context.translate(0,-radius*0.08)
-    for (num = 1; num <= 12; num++){
-      ang = 2 * Math.PI / 12
-      context.rotate(ang)
-      context.translate(0, -radius*0.85);
-      context.rotate(-ang)
-      context.fillText(num.toString(),0,0)
-      context.rotate(ang)
-      context.translate(0, radius*0.85)
-    }
-  }
     /*Hand*/
   function hand(context, pos, length, width){
     context.beginPath()
